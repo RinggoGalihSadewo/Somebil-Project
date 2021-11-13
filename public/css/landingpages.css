@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+nav{
+	z-index: 10;
+}
+a:hover{
+	text-decoration: none;
+}
+body{
+	background-image: url('/img/bg5.png');
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+}
+.btn-login{
+	background-color: #35B1AA;
+	width: 150px;
+	height: 35px;
+	border-radius: 30px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+	transition: 0.3s;
+}
+.btn-login:hover{
+	opacity: 0.9;
+	width: 200px;
+	transition: 0.3s;
+}
+.btn-daftar{
+	background-color: #35B1AA;
+	width: 150px;
+	height: 35px;
+	border-radius: 30px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	transition: 0.3s;
+	border-color: none;
+	margin-left: 0;
+}
+.btn-daftar:hover{
+	opacity: 0.9;
+	width: 200px;
+	transition: 0.3s;
+}
+.slider{	
+	position: absolute;
+	top: 0;
+	z-index: -10;
+}
+.social-media{
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 55px;
+	position: fixed;
+	box-sizing: border-box;
+	background-color: #35B1AA;
+	border-radius: 0px 20px 20px 0px;
+	color: white;
+	margin-top: 140px;
+}
+.line1{
+	margin-top: 220px;
+	right: 0;
+	width: 200px; 
+	position: fixed;
+}
+.line2{
+	margin-top: 730px;
+	left: 0;
+	width: 200px; 
+	position: absolute;
+	display: none;
+}
+.ig{
+	transition: 0.3s;
+}
+.ig:hover{
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.fb{
+	transition: 0.3s;
+}
+.fb:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.tw{
+	transition: 0.3s;
+}
+.tw:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.wa{
+	transition: 0.3s;
+}
+.wa:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.ad{
+	transition: 0.3s;
+}
+.ad:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.content{
+	margin-bottom: 20px;
+	/*background: rgba(0, 0, 0, 0.68);*/
+	border-radius: 10px;
+	padding: 0px;
+	box-sizing: border-box;
+	width: 68vw;
+}
+.text{
+	width: 100%;
+	margin-top: 370px;
+	margin-left: 0px;
+	position: absolute;
+	/*background: white;*/
+	border-radius: 0px;
+	padding: 20px; 
+	height: auto;
+	color: white;
+}
+.text .content img{
+	height: 20px;
+	width: 100%;
+}
+.text p{
+	font-size: 1rem;
+}
+.daftar{
+	position: absolute;
+	padding: 25px;
+	box-sizing: border-box;
+	right: 0;
+	left: 0;
+	width: 79vw;
+	height: 80vh;
+	background-color: white;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 120px; 
+	font-size: 0.9rem;
+}
+.login{
+	position: absolute;
+	padding: 25px;
+	box-sizing: border-box;
+	right: 0;
+	left: 0;
+	width: 79vw;
+	height: auto;
+	background-color: white;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 200px; 
+	font-size: 0.9rem;
+}
+.login p{
+	font-size: 1.7rem;
+	font-weight: bold;	
+}
+.daftar p{
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    display: none;
+
+}
+ 
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.daftar .footerform p{
+	color: #35B1AA;
+	font-size: 12px;
+}
+
+.daftar .footerform a{
+	color: #35B1AA;
+	font-size: 12px;
+}
+.footerform p{
+	color: #35B1AA;
+	font-size: 12px;
+}
+.footerform a{
+	color: #35B1AA;
+	font-size: 12px;
+}
+/*.videomobile{
+	background-color: none;
+	width: 100vw;
+	z-index: -99;
+}
+.videomobile video{
+	width: 100vw;
+}*/
+
+
+@media only screen and (min-width: 992px){
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+body{
+	overflow-y: hidden;
+}
+nav{
+	z-index: 10;
+}
+.text .content img{
+	height: 20px;
+	width: 25vw;
+}
+a:hover{
+	text-decoration: none;
+}
+.btn-login{
+	background-color: #35B1AA;
+	width: 150px;
+	height: 35px;
+	border-radius: 30px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+	transition: 0.3s;
+}
+.line1{
+	display: none;
+}
+.line2{
+	display: none;
+}
+.btn-login:hover{
+	opacity: 0.9;
+	width: 200px;
+	transition: 0.3s;
+}
+.btn-daftar{
+	background-color: #35B1AA;
+	width: 150px;
+	height: 35px;
+	border-radius: 30px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	transition: 0.3s;
+	border-color: none;
+}
+.btn-daftar:hover{
+	opacity: 0.9;
+	width: 200px;
+	transition: 0.3s;
+}
+.slider{	
+	position: absolute;
+	top: 0;
+	z-index: -10;
+}
+/*.slider img{
+	width: 100%;
+	height: 100vh;
+}*/
+.social-media{
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 55px;
+	position: fixed;
+	box-sizing: border-box;
+	background: rgba(53, 177, 170, 0.5);
+	border-radius: 0px 20px 20px 0px;
+	color: white;
+	margin-top: 150px;
+}
+.ig{
+	transition: 0.3s;
+}
+.ig:hover{
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.fb{
+	transition: 0.3s;
+}
+.fb:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.tw{
+	transition: 0.3s;
+}
+.tw:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.wa{
+	transition: 0.3s;
+}
+.wa:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.ad{
+	transition: 0.3s;
+}
+.ad:hover{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s; 
+}
+.content{
+	margin-bottom: 20px;
+	background: none;
+	padding: 0;
+}
+.text{
+	width: 850px;
+	color: white;
+	margin-top: 240px;
+	margin-left: 210px;
+	position: fixed;
+	background: none;
+}
+.daftar{
+	position: absolute;
+	padding: 25px;
+	box-sizing: border-box;
+	right: 0;
+	left: 0;
+	width: 40%;
+	height: auto;
+	background-color: white;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 30px; 
+	font-size: 0.9rem;
+}
+.login{
+	position: absolute;
+	padding: 25px;
+	box-sizing: border-box;
+	right: 0;
+	left: 0;
+	width: 40%;
+	height: auto;
+	background-color: white;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 200px; 
+	font-size: 0.9rem;
+}
+.login p{
+	font-size: 1.7rem;
+	font-weight: bold;	
+}
+.daftar p{
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    display: inline;
+}
+
+.fullscreen-bg__video{
+	width: 100vw;
+}
+ 
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.daftar .footerform p{
+	color: #35B1AA;
+	font-size: 14px;
+}
+
+.daftar .footerform a{
+	color: #35B1AA;
+	font-size: 14px;
+}
+.footerform p{
+	color: #35B1AA;
+	font-size: 14px;
+}
+.footerform a{
+	color: #35B1AA;
+	font-size: 14px;
+}

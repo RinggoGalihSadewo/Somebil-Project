@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: black;
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #35B1AA;
+  outline: 1px solid slategrey;
+}
+body{
+	background-image: url('/img/bg5.png');
+	background-size: 100vw 100%;
+	background-repeat: no-repeat;
+}
+.fotoProfile{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white
+}
+.nama{
+	width: 400px;
+	border-radius: 20px 0 0 20px;
+	background-color: white;
+}
+.content{
+	/*margin-top: 80px;*/
+	margin-top: 100px;	 
+	display: grid;
+	grid-column-columns: auto 100% auto;
+	grid-template-areas: 
+	'leftbar maincontent rightbar'
+	'leftbar maincontent rightbar'
+	'leftbar maincontent rightbar'
+	'leftbar maincontent rightbar'
+	'footer footer footer'  
+}
+.recFriend{
+	grid-area: leftbar;
+	background-color: white;
+	height: auto;
+	border-radius: 0 20px 20px 0; 
+	padding: 20px;
+	padding-top: 35px;
+}
+.teman1{
+	margin-top: 20px;
+}
+.profilteman p{
+	margin-top: 25px;
+	margin-left: 10px;
+}
+.content .teman1 p{
+	margin-top: 15px;
+	margin-left: 10px;  
+}
+.mainContent{
+	grid-area: maincontent;
+	background-color: white;
+	height: auto;
+}
+.status{
+	width: 85%;
+	height: auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 15px;
+	margin-top: 30px;
+}
+.hsearch{
+	font-size: 20px;
+	width: 60%;
+	height: auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 15px;
+}
+.pencarian{
+	width: 85%;
+	height: auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 15px;
+	margin-top: 30px;
+}
+.pencarian .bio{
+	padding-left: 20px;
+	text-align: left;
+	padding-top: 15px; 
+}
+.berita{
+	grid-area: rightbar;
+	background-color: white;
+	height: auto;
+	padding: 20px;
+	padding-top: 35px; 
+	border-radius: 20px 0 0 20px;
+}
+a{
+	color: #35B1AA;
+	text-decoration: none;
+}
+.btnStyle{
+	background-color: #35B1AA;
+	width: 150px;
+	height: 35px;
+	border-radius: 30px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+	transition: 0.3s;
+}
+.btnStyle:hover{
+	opacity: 0.8;
+}
+.footer .social-media{
+	padding-top: 10px;
+	padding-left: 0px;
+	width: 55px;
+	height: 250px;
+	box-sizing: border-box;
+	background: #35B1AA;
+	border-radius: 0px 20px 20px 0px;
+	color: white;
+	margin-top: 0px;
+	transition: 0.3s;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.footer .social-media:hover{
+	width: 65px;
+	transition: 0.3s;
+}
+.ig{
+	transition: 0.3s;
+}
+.ig:hover{
+	margin-left: 20px;
+	transition: 0.3s; 
+}
+.fb{
+	transition: 0.3s;
+}
+.fb:hover{
+	margin-left: 20px;
+	transition: 0.3s; 
+}
+.tw{
+	transition: 0.3s;
+}
+.tw:hover{
+	margin-left: 20px;
+	transition: 0.3s; 
+}
+.wa{
+	transition: 0.3s;
+}
+.wa:hover{
+	margin-left: 20px;
+	transition: 0.3s; 
+}
+.ad{
+	transition: 0.3s;
+}
+.ad:hover{
+	margin-left: 20px;
+	transition: 0.3s; 
+}
+.footer{
+	grid-area: footer;
+	background-color: white;
+	margin-top: 20px;
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+.footer .develope{
+
+}
+.footer .download{
+	border-left: 1px solid #35B1AA; 
+	width: 50%;
+	padding: 30px;
+	overflow-y: hidden;
+}
+.footer .download .logo1{
+	margin-top: -25px; 
+	position: absolute;
+	right: 0;
+}
+.footer .download .linkdownload{
+	margin-top: 80px;
+	margin-left: 70px;
+}
+.backberanda{
+	width: 20vw;
+	height: auto;
+	background-color: white;
+	padding: 10px 20px;
+	margin-top: 110px;
+	margin-bottom: 0px;
+	border-radius: 20px 0 0 20px; 
+}
+.backberanda a{
+	font-size: 20px;
+	color: black;
+}
+.detailprofil{
+	background-color: white;
+	border-radius: 20px;
+	height: auto;
+	margin-top: 40px;
+	width: 60vw; 
+	padding: 20px;
+	box-sizing: border-box;
+}
+.detailprofil .detailbio{
+	display: flex;
+	text-align: left;
+	font-size: 20px;
+}
+.bio{
+	width: 100%; 
+}
+.detailprofil .detailbio .bio{
+	margin-top: 0px;
+	margin-left: 30px;
+}
+.statusdetail{
+	width: 40%;
+	height: 250px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 15px;
+	margin-top: 30px;
+}
+.btnStylebuat{
+	background-color: #35B1AA;
+	width: 150px;
+	height: 35px;
+	border-radius: 30px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+	transition: 0.3s;
+	color: white;
+}
+.btnStylebuat:hover{
+	opacity: 0.8;
+	color: white;
+}
+.pagination{
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 992px){
+	
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	
+	*{
+		font-family: 'Poppins', sans-serif;
+		margin: 0;
+		padding: 0;
+		color: black;
+		overflow-x: hidden;
+	}
+	body{
+		background-image: url('/img/bg5.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.navbar-brand img{
+		width: 60vw;
+	}
+	#iconnav{
+		margin-left: 0px;
+	}
+	nav ul li .search input {
+		width: 70vw;
+	}
+	.recFriend{
+		border-radius: 0;
+	}
+	.berita{
+		border-radius: 0;
+		margin-top: 50px; 
+	}
+	.footer .social-media{
+		padding-top: 10px;
+		padding-left: 0px;
+		width: 80px;
+		height: 250px;
+		box-sizing: border-box;
+		background: #35B1AA;
+		border-radius: 0px 20px 20px 0px;
+		color: white;
+		margin-top: 0px;
+		transition: 0.3s;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+	}
+	.footer .social-media:hover{
+		width: 90px;
+		transition: 0.3s;
+	}
+	.ig{
+		transition: 0.3s;
+	}
+	.ig:hover{
+		margin-left: 20px;
+		transition: 0.3s; 
+	}
+	.fb{
+		transition: 0.3s;
+	}
+	.fb:hover{
+		margin-left: 20px;
+		transition: 0.3s; 
+	}
+	.tw{
+		transition: 0.3s;
+	}
+	.tw:hover{
+		margin-left: 20px;
+		transition: 0.3s; 
+	}
+	.wa{
+		transition: 0.3s;
+	}
+	.wa:hover{
+		margin-left: 20px;
+		transition: 0.3s; 
+	}
+	.ad{
+		transition: 0.3s;
+	}
+	.ad:hover{
+		margin-left: 20px;
+		transition: 0.3s; 
+	}
+	.footer{
+		grid-area: footer;
+		background-color: white;
+		margin-top: 20px;
+		height: 250px;
+		width: 100%;
+		display: flex;
+		font-size: 12.7px;
+	}
+	.footer .develope img{
+		width: 200px;
+	}
+	.footer .download{
+		border-left: 1px solid #35B1AA; 
+		width: 50%;
+		padding: 30px;
+		overflow-y: hidden;
+		display: none;
+	}
+	.footer .download .logo1{
+		margin-top: -25px; 
+		position: absolute;
+		right: 0;
+		display: none;
+	}
+	.footer .download .linkdownload{
+		margin-top: 80px;
+		display: none; 
+	}
+	.status{
+		font-size: 14px;
+	}
+	.btnStyle{
+		background-color: #35B1AA;
+		width: 150px;
+		height: 35px;
+		border-radius: 30px;
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		justify-content: center;  
+		transition: 0.3s;
+	}
+	.btnStylebuat{
+		background-color: #35B1AA;
+		width: 80px;
+		height: 35px;
+		border-radius: 30px;
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		justify-content: center;  
+		transition: 0.3s;
+		color: white;
+	}
+	.btnStylebuat:hover{
+		opacity: 0.8;
+	}
+	.btnStyle:hover{
+		opacity: 0.8;
+	}
+	.hsearch{
+		font-size: 14px;
+	}
+	.detailprofil{
+		width: 100vw;
+	}
+	.detailprofil .detailbio .bio{
+		font-size: 14px;
+		margin: 0;
+	}
+	.backberanda{
+		width: 60vw;
+	}
+	.backberanda a{
+		font-size: 14px;
+	}
+	.statusdetail{
+		width: 85%;
+		height: auto;
+		padding: 20px;
+		background-color: white;
+		border-radius: 15px;
+		margin-top: 30px;
+	}
+	.teman1{
+		margin-top: 20px;
+		width: 70%;
+	}
+}
+
+
